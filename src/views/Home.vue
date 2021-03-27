@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <glButton>
+      <div>O-O</div>
+    </glButton>
+    <svg-icon icon="wechat"></svg-icon>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import glButton from '../componets/gl-button'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    glButton
   }
 }
 </script>
+
+<style scoped>
+
+  .container {
+    background-color: red;
+  }
+</style>
